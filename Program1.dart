@@ -6,7 +6,6 @@ void main() {
   print("Hello, $name. \nWelcome to this program");
 }
 
-class person {
-  String name;
-  int age;
+
+  void person(String name, )
 }
