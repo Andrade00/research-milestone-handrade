@@ -8,6 +8,9 @@ void main() {
       "Hello, $name. \n We are going to play a dice game. If you roll a 7 or 11 you get \$10 If you roll snake eyes you lose all your money. You can end the game and walk away with your money at any time.\nType [STOP] to stop or [ROLL] to roll.");
   String? option = stdin.readLineSync();
   int money = 0;
+  if (option != "STOP" && option != "ROLL") {
+    print("input must be [STOP] or [ROLL]");
+  }
   while (option == "STOP" || option == "ROLL") {
     if (option == "STOP") {
       print("Goodbye $name! You won \$$money");
